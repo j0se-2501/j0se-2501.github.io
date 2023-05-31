@@ -1,0 +1,159 @@
+<!DOCTYPE <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <title>Contacto</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://fonts.cdnfonts.com/css/arcade-classic" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <script defer src="js/form.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body class="p-3 m-0 border-0 bd-example parallax d-flex flex-column min-vh-100">
+    
+    <div class="container">
+      <header class="d-flex flex-wrap justify-content-center justify-content-lg-between py-3 mb-4 border-bottom border-danger fuente-retro">
+          
+        <a href="/" class="d-flex flex-nowrap align-items-center mb-3 mb-lg-0 link-body-emphasis text-decoration-none text-bg-danger rounded-1">
+          <img src="img/icon.png" width="30" height="30" class="mx-2" alt="">
+          <span class="fs-4 text-white me-5">Retro Mini Collection</span>
+        </a>
+  
+        <ul class="nav nav-pills flex-nowrap rounded-1">
+          <li class="nav-item"><a href="index.html" class="btn btn-danger rounded-end-0 text-white" aria-current="page">Inicio</a></li>
+          <li class="nav-item"><a class="btn btn-danger rounded-0 text-white" href="#" role="button" id="juegosDropdown" 
+            data-bs-toggle="dropdown" aria-expanded="false">Juegos</a>
+            <ul class="dropdown-menu bg-danger py-0" aria-labelledby="juegosDropdown">
+              <li class="nav-item"><a class="btn btn-danger w-100 text-white" href="outrun.html">Out Run</a></li>
+              <li class="nav-item"><a class="btn btn-danger w-100 text-white" href="castlevania.html">Castlevania</a></li>
+              <li class="nav-item"><a class="btn btn-danger w-100 text-white" href="kikikaikai.html">Pocky & Rocky</a></li>
+            </ul></li>
+          <li class="nav-item"><a href="gallery.html" class="btn btn-danger rounded-0 text-white">Galeria</a></li>
+          <li class="nav-item"><a href="contact.html" class="btn btn-danger rounded-0 text-white">Contacto</a></li>
+          <li class="nav-item"><a href="us.html" class="btn btn-danger rounded-start-0 text-white text-nowrap">Acerca de</a></li>
+        </ul>
+      </header>
+    </div>
+
+      <div class="container d-flex justify-content-center  p-4 mb-2 mt-4 display-6 text-center fuente-retro">
+        <span class="text-bg-danger p-3 rounded"> Formulario</span>
+      </div>
+      <div class="container">
+      <div class="d-flex flex-wrap justify-content-center p-2 mb-2">
+        
+        <div class="flex-nowrap text-nowrap">
+        <h6 class="p-3 rounded fw-bolder">¿Echas en falta algún videojuego en nuestra página?</h6>
+        </div>
+        <div class="flex-nowrap">
+        <h6 class=" p-3 rounded fw-bolder">¡Contacta con nosotros!</h6>
+         </div>
+           
+      </div>
+    </div>
+      
+        <div class="container">
+            <form class="row needs-validation" novalidate>
+              
+                <div class="col-lg-3 col-md-6 col-12 my-3">
+                    <label for="usuario" class="form-label fw-bolder">
+                        Usuario:
+                    </label>
+                    <input type="text" class="form-control" name="usario" id="usuario" aria-describedby="helpId" required
+                        placeholder="Usuario">
+                    <div class="valid-feedback">
+                        Así que este es tu nombre.
+                    </div>
+                    <div class="invalid-feedback">
+                        No username lol.
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 my-3">
+                    <label for="asunto" class="form-label fw-bolder">
+                        Asunto:
+                    </label>
+                    <input type="text" class="form-control" name="asunto" id="usuario" aria-describedby="helpId" required
+                        placeholder="Asunto">
+                    <div class="valid-feedback">
+                        Di que sí.
+                    </div>
+                    <div class="invalid-feedback">
+                        Tampoco será tan importante.
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 my-3">
+                    <label for="email" class="form-label fw-bolder">
+                        e-mail:
+                    </label>
+                    <input type="text" class="form-control" name="e-mail" id="e-mail" aria-describedby="helpId" required
+                        placeholder="e-mail">
+                    <div class="valid-feedback">
+                        ¿Con cuántos años te hiciste este correo?
+                    </div>
+                    <div class="invalid-feedback">
+                        Si no me das tu e-mail, ya me dirás.
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 my-3">
+                    <label for="consola" class="form-label fw-bolder">
+                        Elige bando:
+                    </label>
+                    <select class="form-select" name="consola" id="consola" required>
+                        <option value="1">Sega</option>
+                        <option value="2">Nintendo</option>
+                    </select>
+                    <div class="valid-feedback">
+                        Espero que escogieras Sega.
+                    </div>
+                    <div class="invalid-feedback">
+                        Nintendero no, ¿verdad?
+                    </div>
+
+                </div>
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label fw-bolder">Mensaje:</label>
+                  <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                  <div class="valid-feedback">
+                    Uf, vaya Biblia.
+                </div>
+                <div class="invalid-feedback">
+                    Escribe algo, ¿no?
+                </div>
+                </div>
+
+                <div class="col-12 pt-2 my-3">
+                  <div id="liveAlertPlaceholder"></div>
+                    <button type="submit" class="btn btn-danger w-100 fuente-retro" id="liveAlertBtn">Enviar</button>
+                    
+                </div>
+                  
+                  </form>
+              </div>
+        
+   
+
+  
+    
+    <footer class="container mt-auto d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-danger  ">
+    <div class="d-flex align-items-center">
+      <img src="img/icon.png" width="30" height="30" class="mb-2" alt="">
+      <span class="mb-3 mb-md-0 text-muted text-start">&copy; Retro Mini Collection</span>
+    </div>
+    <div class="d-flex align-items-center">
+      <span class="mb-3 mb-md-0 text-muted text-end">José Luis Fernández Pérez</span>
+    </div>
+    </footer>
+
+ 
+
+</div>
+      
+  </body>
+
+</html>

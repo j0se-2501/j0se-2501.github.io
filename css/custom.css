@@ -1,0 +1,113 @@
+/*carousel*/
+
+.carousel-caption {
+  display: none; /* Oculta las captions por defecto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  opacity: 0; /* Inicialmente transparente */
+  transition: opacity 0.5s; /* Transición de opacidad suave */
+}
+
+.carousel-item:hover .carousel-caption {
+  display: block; /* Muestra la caption al pasar el ratón por encima */
+  opacity: 1; /* Hace la caption opaca al pasar el ratón por encima */
+}
+
+.carousel-item img {
+  transition: filter 0.5s; /* Transición suave para el efecto de oscurecimiento */
+}
+
+.carousel-item:hover img {
+  filter: brightness(50%); /* Oscurece la imagen al pasar el ratón por encima */
+}
+
+/*fuente personalizada*/
+
+@import url('https://fonts.cdnfonts.com/css/arcade-classic');
+
+.fuente-retro { font-family: 'ArcadeClassic', sans-serif;
+}
+
+/*efecto para las cartas, PROPORCIONADO POR CHATGPT al no encontrar una forma con Bootstrap*/
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+
+/*paleta de colores*/
+
+.bg-1{
+  background-color: #231942;
+}
+
+.color-1{
+  color: #231942;
+}
+
+.bg-2{
+  background-color: #5E548E;
+}
+
+.color-2{
+  color: #5E548E;
+}
+
+.bg-3{
+  background-color: #9F86C0;
+}
+
+.color-3{
+  color: #9F86C0;
+}
+
+.bg-4{
+  background-color: #BE95C4;
+}
+
+.color-4{
+  color: #BE95C4;
+}
+
+.bg-5{
+  background-color: #E0B1CB;
+}
+
+.color-5{
+  color: #E0B1CB;
+}
+
+
+/*parallax*/
+
+body, html {
+  height: 100%;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/fondoParallax.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*COMPROBAR LUEGO SI HACE FALTA ESTO*/
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed 
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}*/
+
